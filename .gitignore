@@ -1,0 +1,7 @@
+*.sublime*
+*~
+*.mp3
+*.wav
+vendor
+*.lock
+*.pyc
