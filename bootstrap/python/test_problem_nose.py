@@ -1,9 +1,9 @@
 # coding: utf-8
-import unitest
+import unittest
 from nose.tools import assert_equals
 from problem import *
 
-class TestProblemNose(unitest.TestCase):
+class TestProblemNose(unittest.TestCase):
 	
 	def test_(self):
 		"""
