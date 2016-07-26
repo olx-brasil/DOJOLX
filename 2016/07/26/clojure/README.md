@@ -1,14 +1,26 @@
 # dojo-clojure
 
-A Clojure library designed to ... well, that part is up to you.
+The dojo solution achieved on 25/07/2016
+
+## Proposal
+
+Implement the following matrix and array functions:
+- (matrix *width* *height*): create matrix with *width* columns and *height* lines;
+- (getij *matrix* *i* *j*): retrieve elements from *matrix* on (*i*,*j*) position;
+- (replace-idx *coll* *idx* *x*): replace element in *coll* on *idx* position by *x*;
+- (setij *matrix* *i* *j* *x*): replace element in *matrix* on (*i*,*j*) by *x*;
+- (diag *matrix*): retrieve the elements of *matrix*'s main diagonal.
 
 ## Usage
 
-FIXME
+Run iteractive terminal:
+```
+lein repl
+> (require '[dojo-clojure.core :refer :all] :reload)
+;; start using the functions
+```
 
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Run tests:
+```
+lein test
+```
