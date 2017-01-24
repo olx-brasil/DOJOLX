@@ -34,6 +34,10 @@ class TestProblem(unittest.TestCase):
         total = calcula_miojo(1, 3, 2)
         self.assertEqual(total, 3) 
 
+    def test_miojo_1_min_amp1_3_amp2_5_tempo_tot_6(self):
+        total = calcula_miojo(1, 3, 5)
+        self.assertEqual(total, 6)
+
 if __name__ == "__main__":
     unittest.main()
 
