@@ -9,7 +9,8 @@ def calcula_miojo(temp, amp1, amp2):
 
     diferenca = abs(amp2 - amp1)
     if diferenca == temp:
-        return amp1 if amp1>amp2 else amp2
+        maior_amp = amp1 if amp1 > amp2 else amp2
+        return maior_amp
        
     else: 
        return 10
