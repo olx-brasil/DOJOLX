@@ -18,10 +18,13 @@ class TestProblem(unittest.TestCase):
         total = calcula_miojo(3, 5, 5)
         self.assertEqual(total, "Não é possivel calcular o tempo do miojo" )
 
-    def test_miojo_3_amp1_3_amp2_5_nao_pode(self):
-        total = calcula_miojo(3, 3, 5)
-        self.assertEqual(total, "Não é possivel calcular o tempo do miojo" )
-       
+    def test_miojo_3_min_amp1_7_amp2_5_tempo_tot_10(self):
+        total = calcula_miojo(3, 7, 5)
+        self.assertEqual(total, 10)
+
+    def test_miojo_2_min_amp1_7_amp2_5_tempo_tot_10(self):
+        total = calcula_miojo(2, 7, 5)
+        self.assertEqual(total, 7)   
 
 if __name__ == "__main__":
     unittest.main()
