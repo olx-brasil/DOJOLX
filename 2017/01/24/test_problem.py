@@ -38,6 +38,14 @@ class TestProblem(unittest.TestCase):
         total = calcula_miojo(1, 3, 5)
         self.assertEqual(total, 6)
 
+    def test_miojo_1_min_amp1_2_amp2_5_tempo_tot_5(self):
+        total = calcula_miojo(1, 2, 5)
+        self.assertEqual(total, 5)
+
+    def test_miojo_1_min_amp1_2_amp2_4_tempo_tot_5(self):
+        total = calcula_miojo(1, 2, 4)
+        self.assertEqual(total, "Não é possivel calcular o tempo do miojo")
+
 if __name__ == "__main__":
     unittest.main()
 
