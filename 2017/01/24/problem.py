@@ -8,8 +8,8 @@ def calcula_miojo(temp, amp1, amp2):
     if diferenca == temp:
         maior_amp = amp1 if amp1 > amp2 else amp2
         return maior_amp
-       
-    calcula_miojo(temp, diferenca, amp2)
 
     else: 
-       return 10
+       menor = amp1 if amp1 < amp2 else amp2
+       maior = amp1 if amp1 > amp2 else amp2
+       return calcula_miojo(temp, menor + menor, maior) 
