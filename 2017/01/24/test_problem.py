@@ -32,7 +32,7 @@ class TestProblem(unittest.TestCase):
 
     def test_miojo_1_min_amp1_3_amp2_2_tempo_tot_3(self):
         total = calcula_miojo(1, 3, 2)
-        self.assertEqual(total, 3)     
+        self.assertEqual(total, 3) 
 
 if __name__ == "__main__":
     unittest.main()
