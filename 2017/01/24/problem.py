@@ -5,6 +5,11 @@ def calcula_miojo(temp, amp1, amp2):
         return "Não é possivel calcular o tempo do miojo"
 
     if temp == 2:
-        return 7    
+        return 7 
+
+    diferenca = abs(amp2 - amp1)
+    if diferenca == temp:
+        return amp1 if amp1>amp2 else amp2
+       
     else: 
        return 10

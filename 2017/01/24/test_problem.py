@@ -22,9 +22,13 @@ class TestProblem(unittest.TestCase):
         total = calcula_miojo(3, 7, 5)
         self.assertEqual(total, 10)
 
-    def test_miojo_2_min_amp1_7_amp2_5_tempo_tot_10(self):
+    def test_miojo_2_min_amp1_7_amp2_5_tempo_tot_7(self):
         total = calcula_miojo(2, 7, 5)
-        self.assertEqual(total, 7)   
+        self.assertEqual(total, 7)
+
+    def test_miojo_1_min_amp1_2_amp2_3_tempo_tot_3(self):
+        total = calcula_miojo(1, 2, 3)
+        self.assertEqual(total, 3)   
 
 if __name__ == "__main__":
     unittest.main()
