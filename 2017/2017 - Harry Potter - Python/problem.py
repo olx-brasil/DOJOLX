@@ -5,6 +5,7 @@ def livro(liv):
 	liv*=42
 	return liv
 
-def desconto(num_liv):
-    num_liv
-    return desc
+def calculadesconto(num_liv):
+	if num_liv == 2:
+		return 5
+	return 0

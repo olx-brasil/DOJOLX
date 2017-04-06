@@ -23,6 +23,7 @@ class TestProblem(unittest.TestCase):
 
     def test_calculadesconto(self):
         self.assertEqual(0,calculadesconto(1))
+        self.assertEqual(5,calculadesconto(2))
            
 
 
