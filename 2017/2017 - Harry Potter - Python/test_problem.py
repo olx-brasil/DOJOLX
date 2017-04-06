@@ -4,7 +4,6 @@
 import unittest
 from problem import *
 
-
 class TestProblem(unittest.TestCase):
     def test_umlivro(self):
         self.assertEqual(42, livro(1))
@@ -24,10 +23,10 @@ class TestProblem(unittest.TestCase):
     def test_calculadesconto(self):
         self.assertEqual(0,calculadesconto(1))
         self.assertEqual(5,calculadesconto(2))
-           
-
-
+        self.assertEqual(10,calculadesconto(3))
+        self.assertEqual(15,calculadesconto(4))
+        self.assertEqual(20,calculadesconto(5))
+        self.assertEqual(20,calculadesconto(10))
 
 if __name__ == "__main__":
     unittest.main()
-
