@@ -21,6 +21,12 @@ class TestProblem(unittest.TestCase):
     def test_cincolivros(self):
         self.assertEqual(210, livro(5))
 
+    def test_calculadesconto(self):
+        self.assertEqual(0,calculadesconto(1))
+           
+
+
+
 if __name__ == "__main__":
     unittest.main()
 
